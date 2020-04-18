@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 	"os"
+
 	r "gopkg.in/gorethink/gorethink.v2"
 )
-
 
 func main() {
 
@@ -17,7 +17,7 @@ func main() {
 	}
 
 	session, err := r.Connect(r.ConnectOpts{
-		Address: url,
+		Address:  url,
 		Database: "rethinkdb",
 		Username: "admin",
 		Password: password,
